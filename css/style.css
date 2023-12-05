@@ -1,0 +1,72 @@
+.calculator {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  position: absolute;
+  top: 15%;
+  left: 38%;
+}
+
+.input {
+  background-color: rgb(201, 201, 201);
+  width: 460px;
+  height: 90px;
+  font-size: 60px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  word-wrap: break-word;
+  word-break: break-all;
+  transition: 0.2s;
+}
+
+.buttons {
+  margin-top: 45px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  padding-left: 10px;
+}
+
+button {
+  background-color: rgb(51, 81, 133);
+  border: none;
+  color: aliceblue;
+  border-radius: 15px;
+  height: 65px;
+  width: 75px;
+  font-family: inherit;
+  font-size: inherit;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:nth-child(12) {
+  background-color: orangered;
+  height: 165px;
+}
+
+button:hover:nth-child(12) {
+  background-color: rgb(255, 162, 0);
+  transition: 0.1s;
+}
+
+button:active:nth-child(12) {
+  background-color: orangered;
+}
+
+button:hover {
+  background-color: rgb(18, 50, 103);
+  transition: 0.2s;
+}
+
+button:active {
+  background-color: rgb(0, 0, 0);
+}
+
+button:nth-child(17) {
+  background-color: rgb(0, 0, 0);
+}
